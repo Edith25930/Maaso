@@ -1,0 +1,12 @@
+<?php
+// Copy to email.local.php and enter SMTP details. Never commit the real file.
+return [
+    'public_base_url' => 'https://YOUR-SITE',
+    'smtp_host' => 'YOUR_SMTP_HOST',
+    'smtp_port' => '587',
+    'smtp_username' => 'YOUR_SMTP_USERNAME',
+    'smtp_password' => 'YOUR_SMTP_PASSWORD',
+    'smtp_encryption' => 'tls',
+    'from_email' => 'YOUR_VERIFIED_SENDER_ADDRESS',
+    'from_name' => 'Police Complaints Authority',
+];

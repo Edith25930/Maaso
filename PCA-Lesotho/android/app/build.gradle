@@ -1,0 +1,75 @@
+plugins {
+    id 'com.android.application'
+}
+
+if (file('google-services.json').isFile()) {
+    apply plugin: 'com.google.gms.google-services'
+}
+
+android {
+    namespace 'com.pca.lesotho.citizen'
+    compileSdk 34
+
+    // Backend address. Set PCA_API_BASE_URL in android/gradle.properties
+    // (or pass -PPCA_API_BASE_URL=https://your-domain/ on the command line).
+    def apiBaseUrl = providers.gradleProperty("PCA_API_BASE_URL").orNull
+    if (!apiBaseUrl) {
+        apiBaseUrl = providers.environmentVariable("PCA_API_BASE_URL").orNull
+    }
+    if (!apiBaseUrl) {
+        throw new GradleException("Set PCA_API_BASE_URL in android/gradle.properties.")
+    }
+    def parsedApiBaseUrl
+    try {
+        parsedApiBaseUrl = new URI(apiBaseUrl)
+    } catch (java.net.URISyntaxException e) {
+        throw new GradleException("PCA_API_BASE_URL must be a valid URL ending in /.", e)
+    }
+    if ((parsedApiBaseUrl.scheme != "https" && parsedApiBaseUrl.scheme != "http") || !parsedApiBaseUrl.host || !apiBaseUrl.endsWith("/")) {
+        throw new GradleException("PCA_API_BASE_URL must be a valid HTTP or HTTPS URL ending in /.")
+    }
+
+    defaultConfig {
+        applicationId "com.pca.lesotho.citizen"
+        minSdk 23
+        targetSdk 34
+        versionCode 1
+        versionName "1.0"
+        buildConfigField "String", "API_BASE_URL", "\"${apiBaseUrl}\""
+    }
+
+    buildFeatures {
+        buildConfig true
+    }
+
+    buildTypes {
+        release {
+            minifyEnabled false
+        }
+    }
+    compileOptions {
+        sourceCompatibility JavaVersion.VERSION_11
+        targetCompatibility JavaVersion.VERSION_11
+    }
+}
+
+dependencies {
+    implementation 'androidx.appcompat:appcompat:1.7.0'
+    implementation 'com.google.android.material:material:1.12.0'
+    implementation 'com.googlecode.libphonenumber:libphonenumber:8.13.55'
+    implementation 'androidx.constraintlayout:constraintlayout:2.1.4'
+    implementation 'androidx.viewpager2:viewpager2:1.1.0'
+    implementation 'androidx.recyclerview:recyclerview:1.3.2'
+    implementation 'androidx.cardview:cardview:1.0.0'
+    implementation 'androidx.lifecycle:lifecycle-viewmodel:2.8.0'
+    implementation 'androidx.security:security-crypto:1.1.0-alpha06'
+
+    // Networking
+    implementation 'com.squareup.retrofit2:retrofit:2.11.0'
+    implementation 'com.squareup.retrofit2:converter-gson:2.11.0'
+    implementation 'com.squareup.okhttp3:logging-interceptor:4.12.0'
+
+    // Firebase initializes when a private google-services.json is provided.
+    implementation platform('com.google.firebase:firebase-bom:33.1.0')
+    implementation 'com.google.firebase:firebase-messaging'
+}

@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent" android:layout_height="match_parent">
+<LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content"
+    android:orientation="vertical" android:padding="20dp">
+
+    <TextView android:layout_width="wrap_content" android:layout_height="wrap_content"
+        android:text="@string/form_police_officer_information" android:textSize="18sp" android:textStyle="bold" android:layout_marginBottom="8dp" />
+
+    <CheckBox android:id="@+id/checkboxUnknownOfficer" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="@string/form_unknown_officer" />
+    <TextView android:layout_width="match_parent" android:layout_height="wrap_content"
+        android:text="@string/form_unknown_officer_help"
+        android:textColor="@color/text_secondary" android:textSize="12sp" android:layout_marginBottom="8dp" />
+
+    <TextView style="@style/TextAppearance.Pca.FormLabel" android:layout_width="match_parent"
+        android:layout_height="wrap_content" android:labelFor="@id/inputOfficerName"
+        android:text="@string/form_officer_name" android:layout_marginTop="8dp" android:layout_marginBottom="4dp" />
+    <EditText style="@style/Widget.Pca.FormField" android:id="@+id/inputOfficerName"
+        android:layout_width="match_parent" android:layout_height="wrap_content"
+        android:hint="@string/form_officer_name" />
+    <TextView style="@style/TextAppearance.Pca.FormLabel" android:layout_width="match_parent"
+        android:layout_height="wrap_content" android:labelFor="@id/inputOfficerRank"
+        android:text="@string/form_rank" android:layout_marginTop="12dp" android:layout_marginBottom="4dp" />
+    <EditText style="@style/Widget.Pca.FormField" android:id="@+id/inputOfficerRank"
+        android:layout_width="match_parent" android:layout_height="wrap_content"
+        android:hint="@string/form_rank" />
+    <TextView style="@style/TextAppearance.Pca.FormLabel" android:layout_width="match_parent"
+        android:layout_height="wrap_content" android:labelFor="@id/inputBadgeNumber"
+        android:text="@string/form_badge_number" android:layout_marginTop="12dp" android:layout_marginBottom="4dp" />
+    <EditText style="@style/Widget.Pca.FormField" android:id="@+id/inputBadgeNumber"
+        android:layout_width="match_parent" android:layout_height="wrap_content"
+        android:hint="@string/form_badge_number" />
+    <TextView style="@style/TextAppearance.Pca.FormLabel" android:layout_width="match_parent"
+        android:layout_height="wrap_content" android:labelFor="@id/inputStation"
+        android:text="@string/form_police_station" android:layout_marginTop="12dp" android:layout_marginBottom="4dp" />
+    <EditText style="@style/Widget.Pca.FormField" android:id="@+id/inputStation"
+        android:layout_width="match_parent" android:layout_height="wrap_content"
+        android:hint="@string/form_police_station" />
+
+    <TextView android:layout_width="wrap_content" android:layout_height="wrap_content"
+        android:text="@string/form_witnesses" android:textSize="16sp" android:textStyle="bold" android:layout_marginTop="24dp" />
+
+    <LinearLayout android:id="@+id/witnessContainer" android:layout_width="match_parent" android:layout_height="wrap_content" android:orientation="vertical" android:layout_marginTop="8dp" />
+
+    <Button android:id="@+id/btnAddWitness" style="?android:attr/borderlessButtonStyle" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/form_add_witness" />
+    <CheckBox android:id="@+id/checkboxNoWitnesses" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="@string/form_no_witnesses" />
+
+</LinearLayout>
+</ScrollView>

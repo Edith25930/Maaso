@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <style name="Theme.PcaLesotho" parent="Theme.MaterialComponents.DayNight.NoActionBar">
+        <item name="colorPrimary">@color/pca_navy</item>
+        <item name="colorPrimaryDark">@color/pca_navy_dark</item>
+        <item name="colorAccent">@color/pca_gold</item>
+        <item name="android:windowBackground">@color/background</item>
+        <item name="materialButtonStyle">@style/Widget.Pca.Button</item>
+        <item name="bottomNavigationStyle">@style/Widget.Pca.BottomNavigation</item>
+    </style>
+
+    <style name="Widget.Pca.FormField" parent="Widget.AppCompat.EditText">
+        <item name="android:background">@drawable/bg_form_field</item>
+        <item name="android:textColor">@color/text_primary</item>
+        <item name="android:textColorHint">@color/text_secondary</item>
+        <item name="android:paddingStart">12dp</item>
+        <item name="android:paddingEnd">12dp</item>
+        <item name="android:minHeight">52dp</item>
+    </style>
+
+    <style name="TextAppearance.Pca.FormLabel" parent="TextAppearance.MaterialComponents.Body2">
+        <item name="android:textColor">@color/pca_navy</item>
+        <item name="android:textStyle">bold</item>
+    </style>
+
+    <style name="Widget.Pca.Button" parent="Widget.MaterialComponents.Button">
+        <item name="backgroundTint">@color/pca_navy</item>
+        <item name="cornerRadius">12dp</item>
+        <item name="android:minHeight">48dp</item>
+        <item name="android:textAllCaps">false</item>
+        <item name="android:textColor">@color/white</item>
+        <item name="android:insetTop">0dp</item>
+        <item name="android:insetBottom">0dp</item>
+    </style>
+
+    <style name="Widget.Pca.OutlinedButton" parent="Widget.MaterialComponents.Button.OutlinedButton">
+        <item name="backgroundTint">@color/surface</item>
+        <item name="cornerRadius">12dp</item>
+        <item name="strokeColor">@color/surface_border</item>
+        <item name="strokeWidth">1dp</item>
+        <item name="android:minHeight">48dp</item>
+        <item name="android:textAllCaps">false</item>
+        <item name="android:textColor">@color/pca_navy</item>
+    </style>
+
+    <style name="Widget.Pca.BottomNavigation" parent="Widget.MaterialComponents.BottomNavigationView">
+        <item name="android:background">@color/surface</item>
+        <item name="elevation">12dp</item>
+        <item name="itemIconTint">@color/pca_navy</item>
+        <item name="itemTextColor">@color/pca_navy</item>
+        <item name="labelVisibilityMode">labeled</item>
+    </style>
+
+    <style name="Theme.PcaLesotho.Splash" parent="Theme.PcaLesotho">
+        <item name="android:windowBackground">@color/white</item>
+    </style>
+</resources>

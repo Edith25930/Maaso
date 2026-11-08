@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent" android:layout_height="match_parent">
+<LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content"
+    android:orientation="vertical" android:padding="20dp">
+
+    <TextView android:layout_width="wrap_content" android:layout_height="wrap_content"
+        android:text="@string/form_what_happened" android:textSize="18sp" android:textStyle="bold" android:layout_marginBottom="12dp" />
+
+    <TextView style="@style/TextAppearance.Pca.FormLabel" android:layout_width="match_parent"
+        android:layout_height="wrap_content" android:labelFor="@id/spinnerComplaintType"
+        android:text="@string/form_complaint_type" android:layout_marginBottom="4dp" />
+    <Spinner android:id="@+id/spinnerComplaintType" android:layout_width="match_parent"
+        android:layout_height="wrap_content" android:minHeight="52dp"
+        android:paddingStart="12dp" android:paddingEnd="40dp"
+        android:background="@drawable/bg_form_spinner" />
+    <CheckBox android:id="@+id/checkboxUnknownType" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="@string/form_unknown_complaint_type" />
+
+    <TextView style="@style/TextAppearance.Pca.FormLabel" android:layout_width="match_parent"
+        android:layout_height="wrap_content" android:labelFor="@id/inputIncidentDate"
+        android:text="@string/form_incident_date" android:layout_marginTop="12dp" android:layout_marginBottom="4dp" />
+    <EditText style="@style/Widget.Pca.FormField" android:id="@+id/inputIncidentDate"
+        android:layout_width="match_parent" android:layout_height="wrap_content"
+        android:hint="@string/form_incident_date" android:focusable="false" />
+
+    <TextView style="@style/TextAppearance.Pca.FormLabel" android:layout_width="match_parent"
+        android:layout_height="wrap_content" android:labelFor="@id/inputIncidentTime"
+        android:text="@string/form_approximate_time" android:layout_marginTop="12dp" android:layout_marginBottom="4dp" />
+    <EditText style="@style/Widget.Pca.FormField" android:id="@+id/inputIncidentTime"
+        android:layout_width="match_parent" android:layout_height="wrap_content"
+        android:hint="@string/form_approximate_time" android:focusable="false" />
+
+    <TextView style="@style/TextAppearance.Pca.FormLabel" android:layout_width="match_parent"
+        android:layout_height="wrap_content" android:labelFor="@id/spinnerDistrict"
+        android:text="@string/form_district" android:layout_marginTop="12dp" android:layout_marginBottom="4dp" />
+    <Spinner android:id="@+id/spinnerDistrict" android:layout_width="match_parent"
+        android:layout_height="wrap_content" android:minHeight="52dp"
+        android:paddingStart="12dp" android:paddingEnd="40dp"
+        android:background="@drawable/bg_form_spinner" />
+
+    <TextView style="@style/TextAppearance.Pca.FormLabel" android:layout_width="match_parent"
+        android:layout_height="wrap_content" android:labelFor="@id/inputIncidentLocation"
+        android:text="@string/form_incident_location" android:layout_marginTop="12dp" android:layout_marginBottom="4dp" />
+    <EditText style="@style/Widget.Pca.FormField" android:id="@+id/inputIncidentLocation"
+        android:layout_width="match_parent" android:layout_height="wrap_content"
+        android:hint="@string/form_incident_location" />
+
+    <TextView style="@style/TextAppearance.Pca.FormLabel" android:layout_width="match_parent"
+        android:layout_height="wrap_content" android:labelFor="@id/inputPoliceStation"
+        android:text="@string/form_police_station_involved" android:layout_marginTop="12dp" android:layout_marginBottom="4dp" />
+    <EditText style="@style/Widget.Pca.FormField" android:id="@+id/inputPoliceStation"
+        android:layout_width="match_parent" android:layout_height="wrap_content"
+        android:hint="@string/form_police_station_involved" />
+
+    <Button android:id="@+id/btnAiAssist" android:layout_width="match_parent"
+        android:layout_height="wrap_content" android:text="@string/need_help_describing"
+        android:layout_marginBottom="12dp" />
+
+    <TextView style="@style/TextAppearance.Pca.FormLabel" android:layout_width="match_parent"
+        android:layout_height="wrap_content" android:labelFor="@id/inputDescription"
+        android:text="@string/form_description_of_incident" android:layout_marginTop="12dp" android:layout_marginBottom="4dp" />
+    <EditText style="@style/Widget.Pca.FormField" android:id="@+id/inputDescription"
+        android:layout_width="match_parent" android:layout_height="wrap_content"
+        android:hint="@string/form_description_of_incident" android:inputType="textMultiLine"
+        android:minLines="4" android:gravity="top|start" />
+
+</LinearLayout>
+</ScrollView>

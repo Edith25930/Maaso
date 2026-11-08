@@ -1,0 +1,14 @@
+<?php
+// Copy to sms.local.php to configure SMS delivery.
+//
+// OPTION 1: FREE Local File Logger (Default - No setup required)
+// Leave empty or set username to 'log'. SMS will be logged to backend/storage/sms_log.txt
+//
+// OPTION 2: FREE Africa's Talking Sandbox
+// Set 'username' => 'sandbox' and enter your free Sandbox API key from https://account.africastalking.com/
+//
+return [
+    'username' => 'log',
+    'api_key' => '',
+    'sender_id' => '',
+];

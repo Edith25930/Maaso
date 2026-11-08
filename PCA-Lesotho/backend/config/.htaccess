@@ -1,0 +1,3 @@
+<FilesMatch "^(database|email|push|ai|sms)\.local\.php$">
+    Require all denied
+</FilesMatch>

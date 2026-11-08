@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent" android:layout_height="match_parent">
+<LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content"
+    android:orientation="vertical" android:padding="20dp">
+
+    <TextView android:layout_width="wrap_content" android:layout_height="wrap_content"
+        android:text="@string/form_review_your_complaint" android:textSize="18sp" android:textStyle="bold" android:layout_marginBottom="12dp" />
+
+    <TextView android:layout_width="match_parent" android:layout_height="wrap_content" android:text="@string/form_personal_information" android:textStyle="bold" android:layout_marginTop="12dp" />
+    <TextView android:id="@+id/summaryPersonal" android:layout_width="match_parent" android:layout_height="wrap_content" />
+    <Button android:id="@+id/btnEditPersonal" style="?android:attr/borderlessButtonStyle" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/form_edit" />
+
+    <TextView android:layout_width="match_parent" android:layout_height="wrap_content" android:text="@string/form_incident_information" android:textStyle="bold" android:layout_marginTop="12dp" />
+    <TextView android:id="@+id/summaryIncident" android:layout_width="match_parent" android:layout_height="wrap_content" />
+    <Button android:id="@+id/btnEditIncident" style="?android:attr/borderlessButtonStyle" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/form_edit" />
+
+    <TextView android:layout_width="match_parent" android:layout_height="wrap_content" android:text="@string/form_officer_information" android:textStyle="bold" android:layout_marginTop="12dp" />
+    <TextView android:id="@+id/summaryOfficer" android:layout_width="match_parent" android:layout_height="wrap_content" />
+    <Button android:id="@+id/btnEditOfficer" style="?android:attr/borderlessButtonStyle" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/form_edit" />
+
+    <TextView android:layout_width="match_parent" android:layout_height="wrap_content" android:text="@string/form_witnesses" android:textStyle="bold" android:layout_marginTop="12dp" />
+    <TextView android:id="@+id/summaryWitnesses" android:layout_width="match_parent" android:layout_height="wrap_content" />
+
+    <TextView android:layout_width="match_parent" android:layout_height="wrap_content" android:text="@string/form_evidence" android:textStyle="bold" android:layout_marginTop="12dp" />
+    <TextView android:id="@+id/summaryEvidence" android:layout_width="match_parent" android:layout_height="wrap_content" />
+
+    <CheckBox android:id="@+id/checkboxDeclaration" android:layout_width="match_parent" android:layout_height="wrap_content"
+        android:text="@string/form_declaration" android:layout_marginTop="20dp" />
+
+</LinearLayout>
+</ScrollView>

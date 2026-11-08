@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent" android:layout_height="match_parent">
+<LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content"
+    android:orientation="vertical" android:padding="20dp">
+
+    <TextView android:layout_width="wrap_content" android:layout_height="wrap_content"
+        android:text="@string/form_complainant_information" android:textSize="18sp" android:textStyle="bold" android:layout_marginBottom="12dp" />
+
+    <TextView style="@style/TextAppearance.Pca.FormLabel" android:layout_width="match_parent"
+        android:layout_height="wrap_content" android:labelFor="@id/inputFullName"
+        android:text="@string/form_full_name" android:layout_marginBottom="4dp" />
+    <EditText style="@style/Widget.Pca.FormField" android:id="@+id/inputFullName"
+        android:layout_width="match_parent" android:layout_height="wrap_content"
+        android:hint="@string/form_full_name" />
+
+    <TextView style="@style/TextAppearance.Pca.FormLabel" android:layout_width="match_parent"
+        android:layout_height="wrap_content" android:labelFor="@id/inputPhone"
+        android:text="@string/form_phone_number" android:layout_marginTop="12dp" android:layout_marginBottom="4dp" />
+    <EditText style="@style/Widget.Pca.FormField" android:id="@+id/inputPhone"
+        android:layout_width="match_parent" android:layout_height="wrap_content"
+        android:hint="@string/form_phone_number" android:inputType="phone" />
+
+    <TextView style="@style/TextAppearance.Pca.FormLabel" android:layout_width="match_parent"
+        android:layout_height="wrap_content" android:labelFor="@id/spinnerGender"
+        android:text="@string/form_gender" android:layout_marginTop="12dp" android:layout_marginBottom="4dp" />
+    <Spinner android:id="@+id/spinnerGender" android:layout_width="match_parent"
+        android:layout_height="wrap_content" android:minHeight="52dp"
+        android:paddingStart="12dp" android:paddingEnd="40dp"
+        android:background="@drawable/bg_form_spinner" />
+
+    <TextView style="@style/TextAppearance.Pca.FormLabel" android:layout_width="match_parent"
+        android:layout_height="wrap_content" android:labelFor="@id/inputIdNumber"
+        android:text="@string/form_id_number" android:layout_marginTop="12dp" android:layout_marginBottom="4dp" />
+    <EditText style="@style/Widget.Pca.FormField" android:id="@+id/inputIdNumber"
+        android:layout_width="match_parent" android:layout_height="wrap_content"
+        android:hint="@string/form_id_number" />
+
+    <TextView style="@style/TextAppearance.Pca.FormLabel" android:layout_width="match_parent"
+        android:layout_height="wrap_content" android:labelFor="@id/spinnerDistrict"
+        android:text="@string/form_district" android:layout_marginTop="12dp" android:layout_marginBottom="4dp" />
+    <Spinner android:id="@+id/spinnerDistrict" android:layout_width="match_parent"
+        android:layout_height="wrap_content" android:minHeight="52dp"
+        android:paddingStart="12dp" android:paddingEnd="40dp"
+        android:background="@drawable/bg_form_spinner" />
+
+    <TextView style="@style/TextAppearance.Pca.FormLabel" android:layout_width="match_parent"
+        android:layout_height="wrap_content" android:labelFor="@id/inputCurrentLocation"
+        android:text="@string/form_current_location" android:layout_marginTop="12dp" android:layout_marginBottom="4dp" />
+    <EditText style="@style/Widget.Pca.FormField" android:id="@+id/inputCurrentLocation"
+        android:layout_width="match_parent" android:layout_height="wrap_content"
+        android:hint="@string/form_current_location" />
+
+</LinearLayout>
+</ScrollView>

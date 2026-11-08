@@ -1,0 +1,6 @@
+<?php
+// Copy to ai.local.php and enter your Gemini API key. Never commit the real file.
+return [
+    'api_key' => 'YOUR_GEMINI_API_KEY',
+    'model' => 'gemini-3.5-flash-lite',
+];

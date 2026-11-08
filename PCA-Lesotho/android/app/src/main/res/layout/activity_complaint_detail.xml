@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent" android:layout_height="match_parent"
+    android:background="@color/background">
+<LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content"
+    android:orientation="vertical" android:padding="20dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        android:layout_marginBottom="16dp">
+
+        <ImageView
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:contentDescription="@string/app_name"
+            android:src="@drawable/pca_logo" />
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="12dp"
+            android:layout_weight="1"
+            android:text="@string/app_name"
+            android:textColor="@color/pca_navy"
+            android:textSize="18sp"
+            android:textStyle="bold" />
+
+        <Button
+            android:id="@+id/btnShareReference"
+            style="@style/Widget.Pca.OutlinedButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:minHeight="40dp"
+            android:text="@string/share_gcr_reference"
+            android:textSize="13sp" />
+    </LinearLayout>
+
+    <TextView android:id="@+id/textDetailGcr" android:layout_width="wrap_content" android:layout_height="wrap_content" android:textSize="22sp" android:textStyle="bold" android:textColor="@color/pca_navy" />
+    <TextView android:id="@+id/textDetailCategory" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="4dp" />
+    <TextView android:id="@+id/textDetailStatus" android:layout_width="wrap_content" android:layout_height="wrap_content" android:textStyle="bold" android:textColor="@color/pca_navy" android:background="@drawable/bg_status_pill" android:paddingHorizontal="12dp" android:paddingVertical="8dp" android:minHeight="48dp" android:gravity="center_vertical" android:layout_marginTop="10dp" />
+    <TextView android:id="@+id/textDetailNextStep" android:layout_width="match_parent" android:layout_height="wrap_content" android:background="@color/surface" android:padding="14dp" android:lineSpacingExtra="3dp" android:layout_marginTop="8dp" android:textColor="@color/text_primary" />
+    <TextView android:id="@+id/textDetailExpectedCompletion" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="8dp" />
+    <TextView android:id="@+id/textDetailIncidentDate" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="8dp" />
+    <TextView android:layout_width="match_parent" android:layout_height="wrap_content"
+        android:text="@string/complaint_description_heading" android:textStyle="bold" android:textSize="16sp" android:layout_marginTop="20dp" />
+    <TextView android:id="@+id/textDetailDescription" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="6dp" />
+
+    <TextView android:layout_width="match_parent" android:layout_height="wrap_content"
+        android:text="@string/complaint_progress_heading" android:textStyle="bold" android:textSize="16sp" android:layout_marginTop="20dp" />
+    <LinearLayout android:id="@+id/timelineContainer" android:layout_width="match_parent"
+        android:layout_height="wrap_content" android:orientation="vertical" android:layout_marginTop="6dp" />
+
+    <TextView android:layout_width="match_parent" android:layout_height="wrap_content"
+        android:text="@string/form_evidence" android:textStyle="bold" android:textSize="16sp" android:layout_marginTop="20dp" />
+    <LinearLayout android:id="@+id/evidenceContainer" android:layout_width="match_parent"
+        android:layout_height="wrap_content" android:orientation="vertical" android:layout_marginTop="6dp" />
+    <Button
+        android:id="@+id/btnAddEvidence"
+        style="@style/Widget.Pca.OutlinedButton"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:text="@string/add_evidence"
+        android:visibility="gone" />
+
+    <ProgressBar android:id="@+id/detailProgress" android:layout_width="wrap_content"
+        android:layout_height="wrap_content" android:layout_gravity="center" android:visibility="gone"
+        android:contentDescription="@string/loading_complaints" />
+    <TextView android:id="@+id/textDetailError" android:layout_width="match_parent"
+        android:layout_height="wrap_content" android:visibility="gone" android:textColor="@color/status_red"
+        android:layout_marginTop="12dp" />
+    <Button android:id="@+id/btnRetryDetail" android:layout_width="match_parent"
+        android:layout_height="wrap_content" android:minHeight="48dp" android:text="@string/retry" android:visibility="gone" />
+</LinearLayout>
+</ScrollView>

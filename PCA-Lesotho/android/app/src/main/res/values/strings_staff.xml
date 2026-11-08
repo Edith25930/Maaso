@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Staff (admin / investigator) screens are English-only. -->
+<resources xmlns:tools="http://schemas.android.com/tools" tools:ignore="MissingTranslation">
+    <string name="staff_title">PCA Case Management</string>
+    <string name="staff_role_admin">Administrator</string>
+    <string name="staff_role_investigator">Investigator</string>
+    <string name="staff_refresh">Refresh</string>
+    <string name="staff_error_generic">Something went wrong. Check your connection and try again.</string>
+    <string name="staff_stat_total">Total cases</string>
+    <string name="staff_stat_active">Active</string>
+    <string name="staff_stat_closed">Closed</string>
+    <string name="staff_stat_overdue">Overdue</string>
+    <string name="staff_stat_due_soon">Due in 7 days</string>
+    <string name="staff_search_hint">Search GCR, name or phone</string>
+    <string name="staff_filter_all_statuses">All statuses</string>
+    <string name="staff_queue_all">All cases</string>
+    <string name="staff_queue_overdue">Overdue</string>
+    <string name="staff_queue_due_soon">Due within 7 days</string>
+    <string name="staff_cases_count">%1$d case(s)</string>
+    <string name="staff_no_cases">No cases match these filters.</string>
+    <string name="staff_load_more">Load more</string>
+    <string name="staff_evidence">Evidence</string>
+    <string name="staff_no_evidence">No evidence files.</string>
+    <string name="staff_evidence_open_failed">Could not open this file.</string>
+    <string name="staff_timeline">Progress history</string>
+    <string name="staff_no_history">No updates yet.</string>
+    <string name="staff_post_update">Post update</string>
+    <string name="staff_keep_status">Keep current status</string>
+    <string name="staff_message_en_hint">Message to complainant (English, required)</string>
+    <string name="staff_message_st_hint">Message to complainant (Sesotho, optional)</string>
+    <string name="staff_pick_date">Expected completion: %1$s</string>
+    <string name="staff_no_date">not set</string>
+    <string name="staff_priority">Case priority</string>
+    <string name="staff_save_priority">Save priority</string>
+    <string name="staff_assign">Assigned investigator</string>
+    <string name="staff_unassigned">Unassigned</string>
+    <string name="staff_save_assignment">Save assignment</string>
+    <string name="staff_saved">Saved.</string>
+    <string name="staff_message_required">Write a message explaining this update.</string>
+</resources>

@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="pca_navy">#0B2545</color>
+    <color name="pca_navy_dark">#081A33</color>
+    <color name="pca_gold">#C9A227</color>
+    <color name="white">#FFFFFF</color>
+    <color name="text_primary">#1A1A1A</color>
+    <color name="text_secondary">#5C5C5C</color>
+    <color name="background">#F5F6F8</color>
+    <color name="status_yellow">#F2B705</color>
+    <color name="status_blue">#1565C0</color>
+    <color name="status_orange">#EF6C00</color>
+    <color name="status_green">#2E7D32</color>
+    <color name="status_red">#C62828</color>
+    <color name="surface">#FFFFFF</color>
+    <color name="surface_border">#E3EAF1</color>
+    <color name="pca_gold_light">#FFF7DF</color>
+</resources>

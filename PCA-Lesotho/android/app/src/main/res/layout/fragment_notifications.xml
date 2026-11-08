@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent" android:layout_height="match_parent"
+    android:orientation="vertical" android:padding="16dp"
+    android:background="@color/background">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        android:layout_marginBottom="12dp">
+        <ImageView
+            android:layout_width="36dp"
+            android:layout_height="36dp"
+            android:contentDescription="@string/app_name"
+            android:src="@drawable/pca_logo" />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="10dp"
+            android:text="@string/notifications_title"
+            android:textColor="@color/pca_navy"
+            android:textSize="22sp"
+            android:textStyle="bold"
+            android:accessibilityHeading="true" />
+    </LinearLayout>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="12dp"
+        android:text="@string/notifications_intro"
+        android:textColor="@color/text_secondary"
+        android:lineSpacingExtra="2dp" />
+    <Button android:id="@+id/btnMarkAllRead" android:layout_width="match_parent"
+        android:layout_height="wrap_content" android:text="@string/notifications_mark_all_read"
+        android:visibility="gone" />
+    <TextView android:id="@+id/notificationStatus" android:layout_width="match_parent"
+        android:layout_height="wrap_content" android:visibility="gone"
+        android:textColor="@color/status_red" android:padding="8dp"
+        android:accessibilityLiveRegion="assertive" />
+    <FrameLayout android:layout_width="match_parent" android:layout_height="0dp"
+        android:layout_weight="1">
+        <androidx.recyclerview.widget.RecyclerView android:id="@+id/recyclerNotifications"
+            android:layout_width="match_parent" android:layout_height="match_parent"
+            android:clipToPadding="false" android:paddingBottom="8dp" />
+        <LinearLayout android:layout_width="match_parent" android:layout_height="match_parent"
+            android:gravity="center" android:orientation="vertical">
+            <ProgressBar android:id="@+id/notificationsProgress" android:layout_width="wrap_content"
+                android:layout_height="wrap_content" android:visibility="gone"
+                android:contentDescription="@string/notifications_title" />
+            <TextView android:id="@+id/emptyStateNoNotifications" android:layout_width="wrap_content"
+                android:layout_height="wrap_content" android:text="@string/notifications_empty"
+                android:visibility="gone" android:gravity="center" android:padding="20dp" />
+            <Button android:id="@+id/btnRetryNotifications" android:layout_width="wrap_content"
+                android:layout_height="wrap_content" android:text="@string/retry"
+                android:visibility="gone" />
+        </LinearLayout>
+    </FrameLayout>
+</LinearLayout>

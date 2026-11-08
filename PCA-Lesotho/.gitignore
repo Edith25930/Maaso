@@ -1,0 +1,28 @@
+# Android / Gradle build output (this is what made the repo huge)
+android/build/
+android/app/build/
+android/.gradle/
+android/.idea/
+android/local.properties
+android/captures/
+*.apk
+*.aab
+*.ap_
+*.dex
+*.iml
+.idea/
+
+# Private configuration and secrets
+android/app/google-services.json
+android/app/*.jks
+android/app/*.keystore
+backend/config/*.local.php
+.env
+
+# Uploaded evidence and other runtime data (keep the folder, not the files)
+backend/storage/evidence/*
+!backend/storage/evidence/.gitkeep
+
+# OS / editor noise
+.DS_Store
+Thumbs.db

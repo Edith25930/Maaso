@@ -1,0 +1,6 @@
+<?php
+// Keep the service-account JSON outside the public web root. Never commit keys.
+return [
+    'project_id' => 'YOUR_FIREBASE_PROJECT_ID',
+    'service_account_path' => '/private/path/firebase-service-account.json',
+];
